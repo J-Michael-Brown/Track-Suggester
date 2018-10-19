@@ -94,7 +94,6 @@ $(document).ready(function() {
     // var cssDesign = 0;
     var cSharpDotNet = 0;
 
-
     if (companyInput === "big") {
       cSharpDotNet += 1;
     }

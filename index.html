@@ -10,124 +10,151 @@
   </head>
   <body>
     <div class="container">
+      <div class="jumbotron">
+        <h1>Epicodus Course Suggester</h1>
+        <p>Courses are merely a suggestion based on provided information. The final decision falls on your shoulders.</p>
+      </div>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-header">Test header</h2>
+        </div>
+        <div class="panel-body">
+          <p>test text</p>
+          <p>test more text</p>
+        </div>
+      </div>
+
       <form id="formOne">
-        <div class="company">
-          <h2>What kind of company would you like to work at?</h2>
-          <label>
-            <input type="radio" name="company-type" value="big" checked>
-             A big, well established business
-          </label>
-        </div>
-        <div class="company">
-          <label>
-            <input type="radio" name="company-type" value="upstart">
-            A start-up, maybe even starting my own business
-          </label>
-        </div>
-        <div class="company">
-          <label>
-            <input type="radio" name="company-type" value="flex">
-            Not sure yet, I wanna be flexable with my options
-           </label>
-        </div>
+          <div class="company">
+            <h2>What kind of company would you like to work at?</h2>
+            <label>
+              <input type="radio" name="company-type" value="big">
+              A big, well established business
+            </label>
+          </div>
+          <div class="company">
+            <label>
+              <input type="radio" name="company-type" value="upstart">
+              A start-up, maybe even starting my own business
+            </label>
+          </div>
+          <div class="company">
+            <label>
+              <input type="radio" name="company-type" value="flex">
+              Not sure yet, I wanna be flexable with my options
+            </label>
+          </div>
         <!--  - - - - - - - - - - - - - - - - - - - - - - dev type-->
-        <div class="end">
-          <h2>Would you like to be doing front end or back end development?</h2>
-          <label>
-            <input type="radio" name="end-type" value="front" checked>
-            Front end
-          </label>
-        </div>
-        <div class="end">
-          <label>
-            <input type="radio" name="end-type" value="back">
-            Back end
-          </label>
-        </div>
-        <div class="end">
-          <label>
-            <input type="radio" name="end-type" value="unsure">
-            I'm not sure what that means?
-          </label>
-        </div>
+          <div class="end">
+            <h2>Would you like to be doing front end or back end development?</h2>
+            <label>
+              <input type="radio" name="end-type" value="front">
+              Front end
+            </label>
+          </div>
+          <div class="end">
+            <label>
+              <input type="radio" name="end-type" value="back">
+              Back end
+            </label>
+          </div>
+          <div class="end">
+            <label>
+              <input type="radio" name="end-type" value="unsure">
+              I'm not sure what that means?
+            </label>
+          </div>
         <!--  - - - - - - - - - - - - - - - - - - - - - - application-->
-        <div class="app">
-          <h2>What kind of applications would you like to make or work on?</h2>
-          <label>
-            <input type="radio" name="app-type" value="interactive" checked>
-            Interactive web applications (like account creation, or dynamic page content)
-          </label>
-        </div>
-        <div class="app">
-          <label>
-            <input type="radio" name="app-type" value="android">
-            Android apps
-          </label>
-        </div>
-        <div class="app">
-          <label>
-            <input type="radio" name="app-type" value="solve">
-            No particular interest, I just like solving problems
-          </label>
-        </div>
+          <div class="app">
+            <h2>What kind of applications would you like to make or work on?</h2>
+            <label>
+              <input type="radio" name="app-type" value="interactive">
+              Interactive web applications (like account creation, or dynamic page content)
+            </label>
+          </div>
+          <div class="app">
+            <label>
+              <input type="radio" name="app-type" value="android">
+              Android apps
+            </label>
+          </div>
+          <div class="app">
+            <label>
+              <input type="radio" name="app-type" value="solve">
+              No particular interest, I just like solving problems
+            </label>
+          </div>
         <!--  - - - - - - - - - - - - - - - - - - - - - - fourth stuff-->
-        <div class="four">
-          <h2>Are you interested in any of the fields already?</h2>
-          <label>
-            <input type="radio" name="four-type" value="CnN" checked>
-            C# and .NET
-          </label>
-        </div>
-        <div class="four">
-          <label>
-            <input type="radio" name="four-type" value="JnA">
-            JAVA and Android
-          </label>
-        </div>
-        <div class="four">
-          <label>
-            <input type="radio" name="four-type" value="PnD">
-            PHP and Drupal
-          </label>
-        </div>
-        <div class="four">
-          <label>
-            <input type="radio" name="four-type" value="RnR">
-            Ruby and Rails
-          </label>
-        </div>
+
+          <div class="four">
+
+              <h2 class="panel-title">Are you interested in any of the fields already?</h2>
+
+
+              <label>
+                <input type="radio" name="four-type" value="CnN">
+                C# and .NET
+              </label>
+
+          </div>
+          <div class="four">
+            <label>
+              <input type="radio" name="four-type" value="JnA">
+              JAVA and Android
+            </label>
+          </div>
+          <div class="four">
+            <label>
+              <input type="radio" name="four-type" value="PnD">
+              PHP and Drupal
+            </label>
+          </div>
+          <div class="four">
+            <label>
+              <input type="radio" name="four-type" value="RnR">
+              Ruby and Rails
+            </label>
+          </div>
+
         <!--  - - - - - - - - - - - - - - - - - - - - - - fifth stuff-->
-        <div class="five">
-          <h2>What's would be the first thing you think about if you were tasked with designing a website?</h2>
-          <label>
-            <input type="radio" name="five-type" value="what" checked>
-            What it deos
-          </label>
-        </div>
-        <div class="five">
-          <label>
-            <input type="radio" name="five-type" value="who">
-            Who its for
-          </label>
-        </div>
-        <div class="five">
-          <label>
-            <input type="radio" name="five-type" value="how">
-            How its made
-          </label>
-        </div>
+          <div class="five">
+            <h2>What's would be the first thing you think about if you were tasked with designing a website?</h2>
+            <label>
+              <input type="radio" name="five-type" value="what">
+              What it deos
+            </label>
+          </div>
+          <div class="five">
+            <label>
+              <input type="radio" name="five-type" value="who">
+              Who its for
+            </label>
+          </div>
+          <div class="five">
+            <label>
+              <input type="radio" name="five-type" value="how">
+              How its made
+            </label>
+          </div>
 
 
-        <button type="submit" class="btn">Find Me My Greatest Course</button>
+          <button type="submit" class="btn">Find Me My Greatest Course</button>
 
       </form>
-      <div class="result-area">
-        <span class="result" id="rubyRails">You should take the RUBY/Rails course.</span>
-        <span class="result" id="CsharpDotNet">You should take the C#/.NET course.</span>
-        <span class="result" id="phpDrupal">You should take the PHP/Drupal course.</span>
-        <span class="result" id="javaAndroid">You should take the JAVA/Android course.</span>
-        <span class="result" id="unsure">You don't seem to be leaning towards any one subject. I'm not sure what to do about that yet.</span>
-        <span class="result" id="error">Something seems to have gone wrong</span>
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <h2 class="panel-header">Here's what I think</h2>
+        </div>
+        <div class="panel-body">
+          <div class="result-area">
+            <span class="result" id="rubyRails">You should take the RUBY/Rails course.</span>
+            <span class="result" id="CsharpDotNet">You should take the C#/.NET course.</span>
+            <span class="result" id="phpDrupal">You should take the PHP/Drupal course.</span>
+            <span class="result" id="javaAndroid">You should take the JAVA/Android course.</span>
+            <span class="result" id="unsure">You don't seem to be leaning towards any one subject. I'm not sure what to do about that yet.</span>
+            <span class="result" id="error">Something seems to have gone wrong</span>
+          </div>
+        </div>
       </div>
 
     </div>
