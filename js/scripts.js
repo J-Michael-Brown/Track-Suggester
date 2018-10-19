@@ -1,14 +1,70 @@
-var match  = function(subject1, subject2, subject3, subject4) {
-  var sub1 = subject1;
-  var sub2 = subject2;
-  var sub3 = subject3;
-  var sub4 = subject4;
+var match  = function(ruby, java, cSharp, php) {
   // var sub5 = parseInt($("subject5").val()); No info for CSS/Design yet
 
   $(".result").hide();
-  if (sub1 === sub2 && sub1 === sub3 && sub1 === sub4) {
+  if (ruby === java && ruby === cSharp && ruby === php) {
     $(".result#unsure").show();
-  } else if ()
+  } else if (ruby >= java+cSharp+php) {
+    if (ruby^2 > java^2 + cSharp^2 + php^2) {
+      $("#rubyRails").show();
+    } else if (ruby === java) {
+      $("#rubyRails").show();
+      $("#javaAndroid").show();
+    } else if (ruby === cSharp) {
+      $("#rubyRails").show();
+      $("#CsharpDotNet").show();
+    } else if (ruby === php) {
+      $("#rubyRails").show();
+      $("#phpDrupal").show();
+    } else {
+      alert (something went wrong)
+    }
+  } else if (php >= java+cSharp+ruby) {
+    if (php^2 > java^2 + cSharp^2 + ruby^2) {
+      $("#phpDrupal").show();
+    } else if (php === java) {
+      $("#phpDrupal").show();
+      $("#javaAndroid").show();
+    } else if (php === cSharp) {
+      $("#phpDrupal").show();
+      $("#CsharpDotNet").show();
+    } else if (php === ruby) {
+      $("#phpDrupal").show();
+      $("#rubyRails").show();
+    } else {
+      alert (something went wrong)
+    }
+  } else if (cSharp >= java+php+ruby) {
+    if (cSharp^2 > java^2 + php^2 + ruby^2) {
+      $("#CsharpDotNet").show();
+    } else if (cSharp === java) {
+      $("#CsharpDotNet").show();
+      $("#javaAndroid").show();
+    } else if (cSharp === php) {
+      $("#CsharpDotNet").show();
+      $("#phpDrupal").show();
+    } else if (cSharp === ruby) {
+      $("#CsharpDotNet").show();
+      $("#rubyRails").show();
+    } else {
+      alert (something went wrong)
+    }
+  } else if (java >= cSharp+php+ruby) {
+    if (java^2 > cSharp^2 + php^2 + ruby^2) {
+      $("#javaAndroid").show();
+    } else if (java === cSharp) {
+      $("#javaAndroid").show();
+      $("#CsharpDotNet").show();
+    } else if (java === php) {
+      $("#javaAndroid").show();
+      $("#phpDrupal").show();
+    } else if (java === ruby) {
+      $("#javaAndroid").show();
+      $("#rubyRails").show();
+    } else {
+      alert (something went wrong)
+    }
+  }
 
 
 }
