@@ -2,6 +2,10 @@
   display: none;
 }
 
+#result-area {
+  display: none;
+}
+
 body {
   background-color: #000000;
   color: #c6c386;

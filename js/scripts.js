@@ -82,6 +82,7 @@ $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
 
+    $("#result-area").show();
     var companyInput = $("input:radio[name=company-type]:checked").val();
     var endInput = $("input:radio[name=end-type]:checked").val();
     var appInput = $("input:radio[name=app-type]:checked").val();
