@@ -2,13 +2,25 @@
   display: none;
 }
 
-/* body {
-  /* background-color: #000000; */
-  /* color: #c6c386;
-} */
+body {
+  background-color: #000000;
+  color: #c6c386;
+}
+
+#page-heading {
+  background-color: red;
+}
+
+#result-heading {
+  background-color: yellow;
+}
+
+.panel-body {
+  background-color: green;
+}
 
 h2 {
-  /* color: #0892d0; */
+  color: #0892d0;
 }
 
 button {
