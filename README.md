@@ -22,7 +22,7 @@ _This is a website to help inform prospect Epicodus students about which track t
 
   _5. Open website in a browser (double click the "track-suggester" file on your desktop then double click the "index.html" file)_
 
-<!-- * _Or open the page at this url: https://j-michael-brown.github.io/Track-Suggester/_ -->
+* _Or open the page at this url: https://j-michael-brown.github.io/Track-Suggester/_
 
 
 ## Known Bugs
@@ -42,19 +42,3 @@ _Utilizes Bootstrap.css, javascript and jQuery_
 *MIT license*
 
 Copyright (c) 2018 **_{John Michael Brown}_**
-
-/Site uses branching to return the result.
-
-/jQuery is used to show and hide the result after questions are answered and submitted. (Tip: test your app several times with different answers.)
-
-/Form gathers input from the user.
-
-+Variable names are descriptive of what they represent.
-
-Web page is styled using Bootstrap and custom CSS.
-
-/The project is in a presentable, portfolio-quality state.
-
-Required functionality is in place by the Friday deadline.
-
-Project demonstrates understanding of concepts covered this week. If prompted, you are able to discuss your code with an instructor using correct terminology.
