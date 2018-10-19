@@ -12,7 +12,7 @@ var match  = function(ruby, java, cSharp, php) {
 
   if (ruby === 0 && php === 0 && java === 0 && cSharp === 0) {
     $("#nothing").show();
-  } else if (ruby > php && ruby === java && ruby === cSharp || ruby > java && ruby === php && ruby === cSharp || ruby > cSharp && ruby === java && ruby === php || php > ruby && php === java && php === cSharp || php > java && php === ruby && php === cSharp || php > cSharp && php === java && php === ruby || ruby === java && ruby === cSharp && ruby === php) { // accounts for three way ties that include ruby or php
+  } else if (ruby > php && ruby === java && ruby === cSharp || ruby > java && ruby === php && ruby === cSharp || ruby > cSharp && ruby === java && ruby === php || php > ruby && php === java && php === cSharp || php > java && php === ruby && php === cSharp || php > cSharp && php === java && php === ruby || ruby === java && ruby === cSharp && ruby === php) {
     $(".result#unsure").show();
 
   } else {
@@ -78,7 +78,6 @@ var match  = function(ruby, java, cSharp, php) {
     }
   }
 }
-
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
@@ -149,5 +148,4 @@ $(document).ready(function() {
   $("#formTwo").submit(function(event) {
     $("#formOne").toggle();
   });
-
 });
