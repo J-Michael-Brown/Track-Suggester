@@ -1,23 +1,32 @@
 var match  = function(ruby, java, cSharp, php) {
-  // No info for CSS/Design yet
+
 
   $(".result").hide();
+  $(".one-match").hide();
+  $(".two-match").hide();
+
+  var rubyInput = $("span#rubyRails").text();
 
   if (ruby > php && ruby === java && ruby === cSharp || ruby > java && ruby === php && ruby === cSharp || ruby > cSharp && ruby === java && ruby === php || php > ruby && php === java && php === cSharp || php > java && php === ruby && php === cSharp || php > cSharp && php === java && php === ruby || ruby === java && ruby === cSharp && ruby === php) { // accounts for three way ties that include ruby or php
     $(".result#unsure").show();
+
   } else {
     if (ruby >= java && ruby >= cSharp && ruby >= php) {
       if (ruby > java && ruby > cSharp && ruby > php) {
-        $("#rubyRails").show();
+        $(".one-match").show();
+        $(".result-one").text("Ruby/Rails");
       } else if (ruby === java) {
-        $("#rubyRails").show();
-        $("#javaAndroid").show();
+        $(".two-match").show();
+        $(".result-one").text("#rubyRails");
+        $(".result-two").text("#javaAndroid");
       } else if (ruby === cSharp) {
-        $("#rubyRails").show();
-        $("#CsharpDotNet").show();
+        $(".two-match").show();
+        $(".result-one").text("#rubyRails");
+        $(".result-two").text("#CsharpDotNet");
       } else if (ruby === php) {
-        $("#rubyRails").show();
-        $("#phpDrupal").show();
+        $(".two-match").show();
+        $(".result-one").text("#rubyRails");
+        $(".result-two").text("#phpDrupal");
       } else {
         $("#error").show();
 
@@ -25,54 +34,60 @@ var match  = function(ruby, java, cSharp, php) {
     }
     if (php >= java && php >= cSharp && php >= ruby) {
       if (php > java && php > cSharp && php > ruby) {
-        $("#phpDrupal").show();
+        // $("#phpDrupal").show();
+        $(".one-match").show();
+        $(".result-one").text("#phpDrupal");
       } else if (php === java) {
-        $("#phpDrupal").show();
-        $("#javaAndroid").show();
+        // $("#phpDrupal").show();
+        // $("#javaAndroid").show();
+        $(".two-match").show();
+        $(".result-one").text("#javaAndroid");
+        $(".result-two").text("#phpDrupal");
       } else if (php === cSharp) {
-        $("#phpDrupal").show();
-        $("#CsharpDotNet").show();
-      } else if (php === ruby) {
-        $("#phpDrupal").show();
-        $("#rubyRails").show();
+        // $("#phpDrupal").show();
+        // $("#CsharpDotNet").show();
+        $(".two-match").show();
+        $(".result-one").text("#CsharpDotNet");
+        $(".result-two").text("#phpDrupal");
       } else {
         $("#error").show();
 
       }
     }
-    if (cSharp >= java && cSharp >= php && cSharp >= ruby) {
-      if (cSharp > java && cSharp > php && cSharp > ruby) {
-        $("#CsharpDotNet").show();
-      } else if (cSharp === java) {
-        $("#CsharpDotNet").show();
-        $("#javaAndroid").show();
-      } else if (cSharp === php) {
-        $("#CsharpDotNet").show();
-        $("#phpDrupal").show();
-      } else if (cSharp === ruby) {
-        $("#CsharpDotNet").show();
-        $("#rubyRails").show();
-      } else {
-        $("error").show();
-
-      }
-    }
     if (java >= cSharp && java >= php && java >= ruby) {
       if (java > cSharp && java > php && java > ruby) {
-        $("#javaAndroid").show();
+        // $("#javaAndroid").show();
+        $(".one-match").show();
+        $(".result-one").text("#javaAndroid");
       } else if (java === cSharp) {
         $("#javaAndroid").show();
         $("#CsharpDotNet").show();
-      } else if (java === php) {
-        $("#javaAndroid").show();
-        $("#phpDrupal").show();
-      } else if (java === ruby) {
-        $("#javaAndroid").show();
-        $("#rubyRails").show();
+        $(".two-match").show();
+        $(".result-one").text("#CsharpDotNet");
+        $(".result-two").text("#javaAndroid");
       } else {
         $("error").show();
       }
 
+    }
+    if (cSharp >= java && cSharp >= php && cSharp >= ruby) {
+      if (cSharp > java && cSharp > php && cSharp > ruby) {
+        $("#CsharpDotNet").show();
+        $(".one-match").show();
+        $(".result-one").text("#CsharpDotNet");
+      // } else if (cSharp === java) {
+      //   $("#CsharpDotNet").show();
+      //   $("#javaAndroid").show();
+      // } else if (cSharp === php) {
+      //   $("#CsharpDotNet").show();
+      //   $("#phpDrupal").show();
+      // } else if (cSharp === ruby) {
+      //   $("#CsharpDotNet").show();
+      //   $("#rubyRails").show();
+      } else {
+        $("error").show();
+
+      }
     }
   }
 }
