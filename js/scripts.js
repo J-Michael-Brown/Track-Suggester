@@ -4,7 +4,7 @@ var match  = function(ruby, java, cSharp, php) {
   $(".result").hide();
 
 
-  if (ruby === java && ruby === cSharp && ruby === php) {
+  if (ruby > php && ruby === java && ruby === cSharp || ruby > java && ruby === php && ruby === cSharp || ruby > cSharp && ruby === java && ruby === php || php > ruby && php === java && php === cSharp || php > java && php === ruby && php === cSharp || php > cSharp && php === java && php === ruby || ruby === java && ruby === cSharp && ruby === php) { // accounts for three way ties that include ruby or php
     $(".result#unsure").show();
   } else {
     if (ruby >= java+cSharp+php) {
@@ -21,7 +21,7 @@ var match  = function(ruby, java, cSharp, php) {
         $("#phpDrupal").show();
       } else {
         $("#unsure").show();
-        debugger;
+        // debugger;
       }
     }
     if (php >= java+cSharp+ruby) {
@@ -38,7 +38,7 @@ var match  = function(ruby, java, cSharp, php) {
         $("#rubyRails").show();
       } else {
 
-        debugger;
+        // debugger;
       }
     }
     if (cSharp >= java+php+ruby) {
@@ -55,7 +55,7 @@ var match  = function(ruby, java, cSharp, php) {
         $("#rubyRails").show();
       } else {
 
-        debugger;
+        // debugger;
       }
     }
     if (java >= cSharp+php+ruby) {
@@ -71,11 +71,11 @@ var match  = function(ruby, java, cSharp, php) {
         $("#javaAndroid").show();
         $("#rubyRails").show();
       } else {
-        debugger;
+        // debugger;
       }
     }
   }
-  // need to check for three way tie
+  // doesnt like bigger nunbers
   debugger;
 
 }
@@ -108,7 +108,7 @@ $(document).ready(function() {
       rubyRails += 1;
     } else if (endInput === "back") {
       CsharpDotNet += 1;
-      phpDrupal += 1;
+      // phpDrupal += 1;
     } else if (endInput === "unsure") {
       javaAndroid += 1;
     }
