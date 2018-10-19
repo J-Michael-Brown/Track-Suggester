@@ -1,19 +1,22 @@
+var match  = function(subject1, subject2, subject3, subject4) {
+  var sub1 = subject1;
+  var sub2 = subject2;
+  var sub3 = subject3;
+  var sub4 = subject4;
+  // var sub5 = parseInt($("subject5").val()); No info for CSS/Design yet
+
+  $(".result").hide();
+  if (sub1 === sub2 && sub1 === sub3 && sub1 === sub4) {
+    $(".result#unsure").show();
+  } else if ()
+
+
+}
 
 
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-
-    var match  = function(subject1, subject2, subject3, subject4, subject5) {
-      var sub1 = parseInt($("subject1").val());
-      var sub2 = parseInt($("subject2").val());
-      var sub3 = parseInt($("subject3").val());
-      var sub4 = parseInt($("subject4").val());
-      var sub5 = parseInt($("subject5").val());
-
-      
-    }
-
 
     var companyInput = $("input:radio[name=company-type]:checked").val();
     var endInput = $("input:radio[name=end-type]:checked").val();
@@ -65,7 +68,7 @@ $(document).ready(function() {
 
     }
 
-
+    match(rubyRails, CsharpDotNet, phpDrupal, javaAndroid);
     // $(".result-area").show();
     // if (shaggy > monster+snow) {
     //   $(".result").hide();
