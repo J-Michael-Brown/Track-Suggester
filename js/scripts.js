@@ -81,6 +81,7 @@ var match  = function(ruby, java, cSharp, php) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
+    $("form#formOne").toggle();
 
     $("#result-area").show();
     var companyInput = $("input:radio[name=company-type]:checked").val();
@@ -141,6 +142,10 @@ $(document).ready(function() {
 
     match(rubyRails, javaAndroid, cSharpDotNet, phpDrupal);
 
+  });
+
+  $("#formTwo").submit(function(event) {
+    $("form").slideToggle();
   });
 
 });
