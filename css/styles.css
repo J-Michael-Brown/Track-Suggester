@@ -6,6 +6,23 @@
   display: none;
 }
 
+#footer {
+  display: none;
+  text-align: right;
+  float: right;
+}
+
+.footing {
+  font-size: 20px;
+  font-style: italic;
+  color: #7df9ff;
+}
+
+.footer p {
+  color: #7df9ff;
+  margin-right: 5%;
+}
+
 body {
   background-color: #2e4045;
   color: black;

@@ -1,6 +1,6 @@
 var match  = function(ruby, java, cSharp, php) {
 
-
+  $("#footer").show();
   $(".result").hide();
   $(".one-match").hide();
   $(".two-match").hide();
@@ -83,7 +83,7 @@ var match  = function(ruby, java, cSharp, php) {
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
     event.preventDefault();
-    $("#formOne").toggle();
+    $("#formOne").slideToggle(600);
 
     $("#result-area").show();
     var companyInput = $("input:radio[name=company-type]:checked").val();
@@ -147,7 +147,7 @@ $(document).ready(function() {
   });
 
   $("#formTwo").submit(function(event) {
-    $("#formOne").slideToggle();
+    $("#formOne").toggle();
   });
 
 });
