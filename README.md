@@ -53,7 +53,7 @@ Copyright (c) 2018 **_{John Michael Brown}_**
 
 Web page is styled using Bootstrap and custom CSS.
 
-The project is in a presentable, portfolio-quality state.
+/The project is in a presentable, portfolio-quality state.
 
 Required functionality is in place by the Friday deadline.
 

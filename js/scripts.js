@@ -37,18 +37,13 @@ var match  = function(ruby, java, cSharp, php) {
     }
     if (php >= java && php >= cSharp && php >= ruby) {
       if (php > java && php > cSharp && php > ruby) {
-        // $(phpInput).show();
         $(".one-match").show();
         $(".result-one").text(phpInput);
       } else if (php === java) {
-        // $(phpInput).show();
-        // $(javaInput).show();
         $(".two-match").show();
         $(".result-one").text(javaInput);
         $(".result-two").text(phpInput);
       } else if (php === cSharp) {
-        // $(phpInput).show();
-        // $("#CsharpDotNet").show();
         $(".two-match").show();
         $(".result-one").text(cInput);
         $(".result-two").text(phpInput);
@@ -59,7 +54,6 @@ var match  = function(ruby, java, cSharp, php) {
     }
     if (java >= cSharp && java >= php && java >= ruby) {
       if (java > cSharp && java > php && java > ruby) {
-        // $(javaInput).show();
         $(".one-match").show();
         $(".result-one").text(javaInput);
       } else if (java === cSharp) {
@@ -98,61 +92,49 @@ $(document).ready(function() {
     var rubyRails = 0;
     var phpDrupal = 0;
     var javaAndroid = 0;
-    // var cssDesign = 0;
     var cSharpDotNet = 0;
 
     if (companyInput === "big") {
       cSharpDotNet += 1;
-    }
-    if (companyInput === "upstart") {
+    } else if (companyInput === "upstart") {
       rubyRails += 1;
-    }
-    if (companyInput === "flex") {
+    } else if (companyInput === "flex") {
       phpDrupal += 1;
     }
 
     if (endInput === "front") {
       rubyRails += 1;
-    }
-    if (endInput === "back") {
+    } else if (endInput === "back") {
       cSharpDotNet += 1;
       phpDrupal += 1;
-    }
-    if (endInput === "unsure") {
+    } else if (endInput === "unsure") {
       javaAndroid += 1;
     }
 
     if (appInput === "android") {
       javaAndroid += 1;
-    }
-    if (appInput === "solve") {
+    } else if (appInput === "solve") {
       cSharpDotNet += 1;
       phpDrupal += 1;
-    }
-    if (appInput === "interactive") {
+    } else if (appInput === "interactive") {
       rubyRails += 1;
     }
 
     if (fourthInput === "CnN") {
       cSharpDotNet += 2;
-    }
-    if (fourthInput === "JnA") {
+    } else if (fourthInput === "JnA") {
       javaAndroid += 2;
-    }
-    if (fourthInput === "PnD") {
+    } else if (fourthInput === "PnD") {
       phpDrupal += 2;
-    }
-    if (fourthInput === "RnR") {
+    } else if (fourthInput === "RnR") {
       rubyRails += 2;
     }
 
     if (fifthInput === "what") {
       javaAndroid += 1;
-    }
-    if (fifthInput === "who") {
+    } else if (fifthInput === "who") {
       rubyRails += 1;
-    }
-    if (fifthInput === "how") {
+    } else if (fifthInput === "how") {
       phpDrupal += 1;
       cSharpDotNet += 1;
     }
