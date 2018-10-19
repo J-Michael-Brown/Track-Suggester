@@ -6,72 +6,113 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Celebrity Matchmaker</title>
+    <title>Epicodus Track Selector</title>
   </head>
   <body>
     <div class="container">
       <form id="formOne">
-        <div class="food">
-          <h2>What's Your favorite food?</h2>
+        <div class="company">
+          <h2>What kind of company would you like to work at?</h2>
           <label>
-            <input type="radio" name="food-type" value="burgs-n-dogs" checked>
-             Hamburgers and Hotdogs
+            <input type="radio" name="company-type" value="burgs-n-dogs" checked>
+             A big, well established business
           </label>
         </div>
-        <div class="food">
+        <div class="company">
           <label>
-            <input type="radio" name="food-type" value="Cookies">
-            Cookies
+            <input type="radio" name="company-type" value="Cookies">
+            A start-up, maybe even starting my own business
           </label>
         </div>
-        <div class="food">
+        <div class="company">
           <label>
-            <input type="radio" name="food-type" value="Apples">
-            Apples
+            <input type="radio" name="company-type" value="Apples">
+            Not sure yet, I wanna be flexable with my options
            </label>
         </div>
-        <!--  - - - - - - - - - - - - - - - - - - - - - - animal stuff-->
-        <div class="animal">
-          <h2>What's Your favorite animal?</h2>
+        <!--  - - - - - - - - - - - - - - - - - - - - - - dev type-->
+        <div class="end">
+          <h2>Would you like to be doing front end or back end development?</h2>
           <label>
-            <input type="radio" name="animal-type" value="dogs" checked>
-            Dogs
+            <input type="radio" name="end-type" value="dogs" checked>
+            Front end
           </label>
         </div>
-        <div class="animal">
+        <div class="end">
           <label>
-            <input type="radio" name="animal-type" value="forest">
-            Forest Animals
+            <input type="radio" name="end-type" value="forest">
+            Back end
           </label>
         </div>
-        <div class="animal">
+        <div class="end">
           <label>
-            <input type="radio" name="animal-type" value="muppets">
-            Muppets
+            <input type="radio" name="end-type" value="muppets">
+            I'm not sure what that means?
+          </label>
+        </div>
+        <!--  - - - - - - - - - - - - - - - - - - - - - - application-->
+        <div class="app">
+          <h2>What kind of applications would you like to make or work on?</h2>
+          <label>
+            <input type="radio" name="app-type" value="cleaning" checked>
+            Interactive web applications (like account creation, or dynamic page content)
+          </label>
+        </div>
+        <div class="app">
+          <label>
+            <input type="radio" name="app-type" value="mysteries">
+            Android apps
+          </label>
+        </div>
+        <div class="app">
+          <label>
+            <input type="radio" name="app-type" value="eating">
+            No particular interest, I just like solving problems
           </label>
         </div>
         <!--  - - - - - - - - - - - - - - - - - - - - - - hobby stuff-->
-        <div class="hobby">
-          <h2>What do you do for fun?</h2>
+        <div class="four">
+          <h2>Fourth question prompt?</h2>
           <label>
-            <input type="radio" name="hobby-type" value="cleaning" checked>
-            Cleaning
+            <input type="radio" name="four-type" value="cleaning" checked>
+            Fourth question first answer
           </label>
         </div>
-        <div class="hobby">
+        <div class="four">
           <label>
-            <input type="radio" name="hobby-type" value="mysteries">
-            Solving mysteries
+            <input type="radio" name="four-type" value="mysteries">
+            Fourth question second answer
           </label>
         </div>
-        <div class="hobby">
+        <div class="four">
           <label>
-            <input type="radio" name="hobby-type" value="eating">
-            Eating
+            <input type="radio" name="four-type" value="eating">
+            Fourth question third answer
+          </label>
+        </div>
+        <!--  - - - - - - - - - - - - - - - - - - - - - - hobby stuff-->
+        <div class="five">
+          <h2>Fifth question prompt?</h2>
+          <label>
+            <input type="radio" name="five-type" value="cleaning" checked>
+            Fifth question first answer
+          </label>
+        </div>
+        <div class="five">
+          <label>
+            <input type="radio" name="five-type" value="mysteries">
+            Fifth question second answer
+          </label>
+        </div>
+        <div class="five">
+          <label>
+            <input type="radio" name="five-type" value="eating">
+            Fifth question third answer
           </label>
         </div>
 
-        <button type="submit" class="btn">Match Me!</button>
+
+        <button type="submit" class="btn">Find Me My Greatest Course</button>
 
       </form>
       <div class="result-area">
