@@ -7,8 +7,8 @@ var match  = function(ruby, java, cSharp, php) {
   if (ruby > php && ruby === java && ruby === cSharp || ruby > java && ruby === php && ruby === cSharp || ruby > cSharp && ruby === java && ruby === php || php > ruby && php === java && php === cSharp || php > java && php === ruby && php === cSharp || php > cSharp && php === java && php === ruby || ruby === java && ruby === cSharp && ruby === php) { // accounts for three way ties that include ruby or php
     $(".result#unsure").show();
   } else {
-    if (ruby >= java+cSharp+php) {
-      if ((ruby*ruby) > (java*java) + (cSharp*cSharp) + (php*php)) {
+    if (ruby >= java && ruby >= cSharp && ruby >= php) {
+      if (ruby > java && ruby > cSharp && ruby > php) {
         $("#rubyRails").show();
       } else if (ruby === java) {
         $("#rubyRails").show();
@@ -20,12 +20,12 @@ var match  = function(ruby, java, cSharp, php) {
         $("#rubyRails").show();
         $("#phpDrupal").show();
       } else {
-        $("#unsure").show();
-        // debugger;
+        $("#error").show();
+
       }
     }
-    if (php >= java+cSharp+ruby) {
-      if ((php*php) > (java*java) + (cSharp*cSharp) + (ruby*ruby)) {
+    if (php >= java && php >= cSharp && php >= ruby) {
+      if (php > java && php > cSharp && php > ruby) {
         $("#phpDrupal").show();
       } else if (php === java) {
         $("#phpDrupal").show();
@@ -37,12 +37,12 @@ var match  = function(ruby, java, cSharp, php) {
         $("#phpDrupal").show();
         $("#rubyRails").show();
       } else {
+        $("#error").show();
 
-        // debugger;
       }
     }
-    if (cSharp >= java+php+ruby) {
-      if ((cSharp*cSharp) > (java*java) + (php*php) + (ruby*ruby)) {
+    if (cSharp >= java && cSharp >= php && cSharp >= ruby) {
+      if (cSharp > java && cSharp > php && cSharp > ruby) {
         $("#CsharpDotNet").show();
       } else if (cSharp === java) {
         $("#CsharpDotNet").show();
@@ -54,12 +54,12 @@ var match  = function(ruby, java, cSharp, php) {
         $("#CsharpDotNet").show();
         $("#rubyRails").show();
       } else {
+        $("error").show();
 
-        // debugger;
       }
     }
-    if (java >= cSharp+php+ruby) {
-      if ((java*java) > (cSharp*cSharp) + (php*php) + (ruby*ruby)) {
+    if (java >= cSharp && java >= php && java >= ruby) {
+      if (java > cSharp && java > php && java > ruby) {
         $("#javaAndroid").show();
       } else if (java === cSharp) {
         $("#javaAndroid").show();
@@ -71,13 +71,11 @@ var match  = function(ruby, java, cSharp, php) {
         $("#javaAndroid").show();
         $("#rubyRails").show();
       } else {
-        // debugger;
+        $("error").show();
       }
+
     }
   }
-  // doesnt like bigger nunbers
-  debugger;
-
 }
 
 
