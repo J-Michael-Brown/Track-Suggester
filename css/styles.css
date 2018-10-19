@@ -7,31 +7,36 @@
 }
 
 body {
-  background-color: #000000;
-  color: #c6c386;
+  background-color: #2e4045;
+  color: black;
 }
 
 #page-heading {
-  background-color: red;
+  background-color: #83adb5;
+}
+
+#page-heading h2 {
+  color: #7df9ff;
+
 }
 
 #result-heading {
-  background-color: yellow;
+  background-color: #83adb5;
 }
 
 .panel-body {
-  background-color: green;
+  background-color: #c7bbc9;
 }
 
 h2 {
-  color: #0892d0;
+  color: #5e3c58;
 }
 
 button {
-  background-color: #7df9ff;
+  background-color: #857e7c;
 }
 
 .jumbotron {
-  background-color: #0095b6;
+  background-color: #83adb5;
   color: #7df9ff;
 }
